@@ -111,8 +111,6 @@ main {
   margin: 1px 20px 15px;
   border-radius: 2rem;
   text-align: justify;
-
-
 }
 
 .modal-btn {
@@ -129,6 +127,39 @@ main {
 
 .modal-btn:hover {
   background: #3876ac;
+}
+
+.formValidation{
+  position: fixed;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(26, 39, 156, 0.4);
+  display: none;
+}
+
+.formValidation.show{
+  display: block;
+}
+
+.formValidation .content{
+  padding: 18rem 6rem 1rem 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.formValidation .message{
+  font-size: 2rem;
+  text-align: center;
+  align-content: center;
+  padding-bottom: 19rem;
+}
+
+.formValidation .btn-submit{
+  align-content: flex-end;
 }
 
 .footer {
@@ -473,6 +504,18 @@ input[data-error]::after {
 .hero-section > .btn-signup {
   display: none;
 }
+
+.error{
+  color: red;
+  font-size: .8rem;
+  padding: 0 0 .8rem 0;
+  display: none;
+}
+
+.error.show{
+  display: block;
+}
+
 footer {
   padding-left: 2vw;
   padding-right: 2vw;
