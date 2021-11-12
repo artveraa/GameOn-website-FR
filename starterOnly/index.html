@@ -61,8 +61,7 @@
                         action="index.html"
                         method="get"
                 >
-                    <div
-                            class="formData">
+                    <div class="formData">
                         <label>Prénom</label><br>
                         <input
                                 class="text-control"
@@ -71,11 +70,11 @@
                                 id="first"
                                 name="first"
                                 minlength="2"
-                        /><br>
+                        />
                         <div class="error">Veuillez entrer 2 caractères ou plus pour le champ du prénom.</div>
+                        <br>
                     </div>
-                    <div
-                            class="formData">
+                    <div class="formData">
                         <label>Nom</label><br>
                         <input
                                 class="text-control"
@@ -83,11 +82,11 @@
                                 required
                                 id="last"
                                 name="last"
-                        /><br>
+                        />
                         <div class="error">Veuillez entrer 2 caractères ou plus pour le champ du nom.</div>
+                        <br>
                     </div>
-                    <div
-                            class="formData">
+                    <div class="formData">
                         <label>E-mail</label><br>
                         <input
                                 class="text-control"
@@ -95,11 +94,11 @@
                                 required
                                 id="email"
                                 name="email"
-                        /><br>
+                        />
                         <div class="error">Veuillez entrer une adresse mail valide.</div>
+                        <br>
                     </div>
-                    <div
-                            class="formData">
+                    <div class="formData">
                         <label>Date de naissance</label><br>
                         <input
                                 class="text-control"
@@ -107,19 +106,18 @@
                                 required
                                 id="birthdate"
                                 name="birthdate"
-                        /><br>
+                        />
                         <div class="error">Vous devez entrer votre date de naissance.</div>
+                        <br>
                     </div>
-                    <div
-                            class="formData">
+                    <div class="formData">
                         <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br>
                         <input type="number" required class="text-control" id="quantity" name="quantity" min="0"
                                max="99">
                         <div class="error">Vous devez choisir une option.</div>
                     </div>
                     <p class="text-label">Quelles villes ?</p>
-                    <div
-                            class="formData">
+                    <div class="formData">
                         <input
                                 class="checkbox-input"
                                 type="radio"
@@ -195,8 +193,7 @@
                         <div class="error">Vous devez choisir une option.</div>
                     </div>
 
-                    <div
-                            class="formData">
+                    <div class="formData">
                         <input
                                 class="checkbox-input"
                                 type="checkbox"
@@ -207,20 +204,23 @@
                             <span class="checkbox-icon"></span>
                             J'ai lu et accepté les conditions d'utilisation.
                         </label>
-                        <div class="error">Vous devez vérifier que vous acceptez les termes et conditions.</div>
                         <br>
                         <input class="checkbox-input" type="checkbox" id="checkbox2"/>
+                        <div class="error">Vous devez vérifier que vous acceptez les termes et conditions.</div>
                         <label class="checkbox2-label" for="checkbox2">
                             <span class="checkbox-icon"></span>
                             Je souhaite être prévenu des prochains évènements.
                         </label>
                         <br>
                     </div>
-                    <input
-                            class="btn-submit button"
-                            type="submit"
-                            value="C'est parti"
-                    />
+
+
+                        <input
+                                class="btn-submit button"
+                                type="submit"
+                                value="C'est parti"
+                        />
+
                 </form>
             </div>
         </div>
