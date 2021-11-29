@@ -139,6 +139,7 @@ main {
   top: 0;
   background-color: rgba(26, 39, 156, 0.4);
   display: none;
+  overflow: scroll;
 }
 
 .formValidation.show{
@@ -149,6 +150,10 @@ main {
   padding: 18rem 6rem 1rem 6rem;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .formValidation .message{
@@ -166,6 +171,50 @@ main {
   margin: 20px;
   padding: 10px;
   font-family: var(--font-slab);
+}
+
+@media (max-width: 900px){
+
+  .formValidation .content{
+    padding: 3rem 2rem;
+  }
+
+  .formValidation .message{
+    padding-bottom: 2rem;
+  }
+
+  .topnav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .topnav a.icon{
+    margin-top: 0;
+  }
+  .header-logo > img{
+    width: 60%;
+  }
+
+  main > .hero-section{
+    min-height: fit-content;
+  }
+  .hero-section > .hero-content{
+    padding: 0;
+    width: calc(100vw - 40px);
+  }
+  h1.hero-headline{
+    font-size: 2.3rem;
+    max-width: 80%;
+  }
+
+  .hero-content > .hero-text{
+    margin-top: 1rem;
+    font-size: .9rem;
+    text-align: left;
+    width: 80%;
+  }
 }
 
 /* Modal form */
@@ -506,15 +555,16 @@ input[data-error]::after {
 }
 
 .error{
-  color: red;
-  font-size: .8rem;
-  padding: 0 0 .8rem 0;
+  color: lightcoral;
+  font-size: .9rem;
+  padding: .6rem 0 0 0;
   display: none;
 }
 
 .error.show{
   display: block;
 }
+
 
 footer {
   padding-left: 2vw;

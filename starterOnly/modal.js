@@ -44,14 +44,6 @@ function launchModal() {
 
 //messages d'erreurs par champs
 
-const prenom = form.querySelector('input[name="first"]');
-const nom = form.elements["last"];
-const mail = form.elements["email"];
-const date = form.elements["birthdate"];
-const tournois = form.elements["quantity"];
-const city = form.querySelector('input[name="location"]:checked');
-
-
 submitBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
